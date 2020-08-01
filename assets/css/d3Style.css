@@ -1,0 +1,76 @@
+.aText {
+    font-family: sans-serif;
+    font-size: 16px;
+    text-anchor: middle;
+  }
+  
+  /* Y, X axis active font */
+  .active {
+    font-weight: bold;
+    fill: #000;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+  }
+  
+  /* Y, X axis inactive font setting  */
+  .inactive {
+    font-weight: lighter;
+    fill: #757373;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+  }
+  
+  /* Y, X axis hover text color  */
+  .inactive:hover {
+    fill: rgb(59, 71, 247);
+    cursor: pointer;
+  }
+  
+  /* font size for radius */
+  .StateText {
+    font-family: sans-serif;
+    fill: rgb(59, 71, 247);
+    text-anchor: middle;
+  }
+  
+  /* circle inside the chart */
+  .Circles {
+    fill: rgb(120, 150, 243);
+    stroke: #1907b4;
+  }
+  
+  .chart {
+    display: block;
+    margin: 0;
+  }
+  
+  /* Tool tip pop-up */
+  .d3-tip {
+    padding: 6px;
+    font-size: 12px;
+    line-height: 1;
+    line-height: 1.5em;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    background:  rgb(13, 67, 216);
+    border-radius: 6px;
+  }
+  
+  /* Mobile Rules */
+  @media screen and (max-width: 530px) {
+    .StateText {
+      display: none;
+    }
+  
+    .aText {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .aText {
+      font-size: 13px;
+    }
+  }
+  
